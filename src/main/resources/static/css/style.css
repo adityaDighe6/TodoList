@@ -1,0 +1,109 @@
+/* General page styling */
+body {
+  font-family: 'Urbanist', sans-serif;
+  background: #f4f6f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Container box */
+.todo-container {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  width: 350px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Title */
+.todo-container h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input field */
+.todo-input {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+}
+
+/* Add button */
+.todo-button {
+  background: #ff6b35;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  margin-left: 8px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.todo-button:hover {
+  background: #e85a2a;
+}
+
+/* Task list */
+.todo-list {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.todo-list li {
+  background: #f9f9f9;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-list li.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Action icons for tasks */
+.todo-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.todo-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+/* Delete icon */
+.todo-actions .delete-btn {
+  color: #e74c3c; /* red */
+}
+
+.todo-actions .delete-btn:hover {
+  color: #c0392b;
+}
+
+/* Edit icon */
+.todo-actions .edit-btn {
+  color: #3498db; /* blue */
+}
+
+.todo-actions .edit-btn:hover {
+  color: #1d6fa5;
+}
